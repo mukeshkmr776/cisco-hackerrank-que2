@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const main = () => {
+const main = (dirOrFilePath) => {
     return new Promise((resolve, reject) => {
         if(!fs.existsSync(dirOrFilePath)) {
             reject(new Error('Invalid Path'));
